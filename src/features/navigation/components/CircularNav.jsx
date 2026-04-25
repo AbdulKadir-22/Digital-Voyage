@@ -17,22 +17,22 @@ const CircularNav = () => {
   const activeItem = hoveredItem || selectedItem;
 
   return (
-    <nav 
+    <nav
       className="fixed top-8 right-8 z-50 w-64 h-64 flex items-center justify-center pointer-events-none"
       onMouseLeave={() => setHoveredItem(null)}
     >
       {/* Outer Notched Edge */}
-      <div className="absolute inset-[-12px] rounded-full opacity-60" 
-        style={{ 
+      <div className="absolute inset-[-12px] rounded-full opacity-60"
+        style={{
           background: `repeating-conic-gradient(from 0deg, #dfb48e 0deg 0.5deg, transparent 0.5deg 4deg)`,
           maskImage: 'radial-gradient(transparent 69%, black 71%)',
           WebkitMaskImage: 'radial-gradient(transparent 69%, black 71%)'
-        }} 
+        }}
       />
 
       {/* Outer Wheel Container */}
       <div className="relative w-full h-full rounded-full flex items-center justify-center pointer-events-auto shadow-[0_0_50px_rgba(0,0,0,0.8)]">
-        
+
         {/* Main Wheel Background */}
         <div className="absolute inset-0 rounded-full bg-[#1c1e26] border border-[rgba(255,255,255,0.08)] shadow-[inset_0_2px_10px_rgba(0,0,0,0.5)] overflow-hidden">
           {/* Gradient Overlay */}
@@ -42,7 +42,7 @@ const CircularNav = () => {
         {/* Radial Dividers */}
         <div className="absolute inset-0 pointer-events-none">
           {[0, 60, 120, 180, 240, 300].map((angle) => (
-            <div 
+            <div
               key={angle}
               className="absolute top-1/2 left-1/2 w-1/2 h-px bg-[rgba(255,255,255,0.06)] origin-left"
               style={{ transform: `rotate(${angle}deg)` }}
@@ -51,20 +51,20 @@ const CircularNav = () => {
         </div>
 
         {/* Active Segment Highlight */}
-        <div 
+        <div
           className="absolute inset-0 pointer-events-none transition-all duration-500 cubic-bezier(0.4, 0, 0.2, 1)"
-          style={{ 
+          style={{
             transform: `rotate(${navItems.find(i => i.id === activeItem)?.angle}deg)`,
           }}
         >
           {/* Highlighted Wedge - Positioned at 0deg (Right) */}
-          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[110px] h-[110px] origin-left overflow-hidden flex items-center" 
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[110px] h-[110px] origin-left overflow-hidden flex items-center"
             style={{ clipPath: 'polygon(0 50%, 100% 0, 100% 100%)' }}>
-            <div className="w-full h-full bg-gradient-to-r from-[#dfb48e33] to-transparent border-r-2 border-[#dfb48e] blur-[1px]" />
+            <div className="w-full h-full bg-gradient-to-r from-[#dfb48e33] to-transparent blur-[1px]" />
           </div>
-          
+
           {/* Outer Pointer */}
-          <div className="absolute top-1/2 -right-1 -translate-y-1/2 w-2 h-3 bg-[#dfb48e]" 
+          <div className="absolute top-1/2 -right-1 -translate-y-1/2 w-2 h-3 bg-[#dfb48e]"
             style={{ clipPath: 'polygon(0 50%, 100% 0, 100% 100%)' }} />
         </div>
 
@@ -89,21 +89,21 @@ const CircularNav = () => {
               key={item.id}
               onClick={() => setSelectedItem(item.id)}
               onMouseEnter={() => setHoveredItem(item.id)}
-              className="absolute group flex flex-col items-center justify-center transition-all duration-300 z-30"
-              style={{ 
+              className="absolute group transition-all duration-300 z-30 flex flex-col items-center justify-center w-1 h-12"
+              style={{
                 transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(${isActive ? 1.1 : 1})`,
-                // Offset the button so the ICON is at the center, not the whole bounding box
-                marginTop: '-12px' 
               }}
             >
-              <item.icon 
-                size={22} 
-                className={`transition-all duration-300 ${isActive ? 'text-[#dfb48e] drop-shadow-[0_0_10px_rgba(223,180,142,0.8)]' : 'text-gray-500 group-hover:text-gray-300'}`}
-                strokeWidth={isActive ? 2 : 1.5}
-              />
-              <span className={`mt-1 text-[9px] font-medium tracking-[0.1em] transition-colors duration-300 ${isActive ? 'text-[#dfb48e]' : 'text-gray-600 group-hover:text-gray-400'}`}>
-                {item.label}
-              </span>
+              <div className="flex flex-col items-center translate-y-[16px]">
+                <item.icon
+                  size={22}
+                  className={`transition-all duration-300 ${isActive ? 'text-[#dfb48e] drop-shadow-[0_0_10px_rgba(223,180,142,0.8)]' : 'text-gray-500 group-hover:text-gray-300'}`}
+                  strokeWidth={isActive ? 2 : 1.5}
+                />
+                <span className={`mt-1 text-[10px] font-medium tracking-[0.1em] transition-colors duration-300 ${isActive ? 'text-[#dfb48e]' : 'text-gray-600 group-hover:text-gray-400'}`}>
+                  {item.label}
+                </span>
+              </div>
             </button>
           );
         })}

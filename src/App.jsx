@@ -4,13 +4,18 @@ import CircularNav from './features/navigation/components/CircularNav';
 
 function App() {
   return (
-    <main className="relative min-h-screen grid place-items-center p-[clamp(1.25rem,3vw,2.5rem)] overflow-hidden isolate max-md:p-4 max-md:place-items-stretch">
+    <main className="relative min-h-screen overflow-hidden isolate bg-[#17191f]">
       <CircularNav />
       <HeroBackground />
-      <HeroCard />
+      <div className="absolute inset-0 flex items-center justify-center p-4 pointer-events-none">
+        <div className="pointer-events-auto">
+          <HeroCard />
+        </div>
+      </div>
     </main>
   );
 }
+
 
 
 export default App;
