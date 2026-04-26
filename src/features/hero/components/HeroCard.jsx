@@ -3,8 +3,8 @@ import { ArrowRight } from 'lucide-react';
 const HeroCard = () => {
   return (
     <section className="relative z-10 w-full max-w-[550px] min-h-[380px] p-[clamp(1.5rem,2.5vw,2.2rem)] rounded-[2.5rem] 
-      bg-gradient-to-b from-[rgba(62,67,80,0.14)] to-[rgba(24,27,35,0.32)] 
-      bg-[rgba(29,31,39,0.42)] border border-[rgba(255,255,255,0.16)] 
+      bg-gradient-to-b from-[rgba(62,67,80,0.11)] to-[rgba(24,27,35,0.24)] 
+      bg-[rgba(29,31,39,0.34)] border border-[rgba(255,255,255,0.14)] 
       shadow-[inset_0_1px_0_rgba(255,255,255,0.18),inset_0_-1px_0_rgba(255,255,255,0.04),0_24px_60px_rgba(6,7,12,0.34),0_0_0_1px_rgba(255,255,255,0.03)] 
       backdrop-blur-[26px] backdrop-saturate-[1.08] overflow-hidden flex flex-col justify-center
       md:p-[clamp(1.2rem,2.1vw,1.7rem)]
