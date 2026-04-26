@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "firstName": "Faiz",
+    "lastName": "Ansari",
+    "greeting": "HELLO, I'M",
+    "roles": [
+      "Full Stack Developer",
+      "Designer",
+      "Problem Solver"
+    ],
+    "description": "I craft digital experiences that are fast, beautiful and impactful.",
+    "ctaText": "EXPLORE MY WORK"
+  },
+  "footer": {
+    "brandingText": "Let's build something great",
+    "tagline": "Every ride. Every story. Every mile.",
+    "quote": "The journey is the reward. Keep pedaling forward.",
+    "quickLinks": [
+      { "label": "About Me", "href": "#about" },
+      { "label": "Education", "href": "#education" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Travel Experiences", "href": "#travel" },
+      { "label": "Blogs", "href": "#blogs" }
+    ],
+    "connectTagline": "Let's build something great together.",
+    "copyright": "© 2026 Faiz Ansari. All rights reserved."
+  },
+
+  "socials": [
+    {
+      "id": "linkedin",
+      "href": "https://linkedin.com"
+    },
+    {
+      "id": "github",
+      "href": "https://github.com"
+    },
+    {
+      "id": "twitter",
+      "href": "https://twitter.com"
+    },
+    {
+      "id": "instagram",
+      "href": "https://instagram.com"
+    }
+  ]
+}

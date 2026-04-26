@@ -1,0 +1,82 @@
+{
+  "header": {
+    "label": "MY JOURNEY",
+    "titlePrefix": "Miles. Medals. ",
+    "titleHighlight": "Memories.",
+    "description": "Every ride is a story, every medal a milestone.\nHere's a timeline of my journey on and off the bike."
+  },
+  "medals": [
+    {
+      "id": "hero-cyclosport",
+      "type": "Finisher",
+      "title": "Hero Cyclosport",
+      "date": "2024",
+      "distance": "120KM",
+      "image": "/medals/gold.png"
+    },
+    {
+      "id": "coastal-cyclothon",
+      "type": "Finisher",
+      "title": "Coastal Cyclothon",
+      "date": "2023",
+      "distance": "100KM",
+      "image": "/medals/silver.png"
+    },
+    {
+      "id": "himalayan-challenge",
+      "type": "Finisher",
+      "title": "Himalayan Challenge",
+      "date": "2023",
+      "distance": "200KM",
+      "image": "/medals/bronze.png"
+    },
+    {
+      "id": "ironride-india",
+      "type": "Top 50",
+      "title": "IronRide India",
+      "date": "2022",
+      "distance": "150KM",
+      "image": "/medals/gold.png"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "himalayan-dreams",
+      "label": "FEATURED",
+      "title": "Where the Roads Touch the Sky",
+      "description": "A solo ride through the Himalayan dreams.",
+      "date": "May 12, 2024",
+      "readTime": "8 min read",
+      "image": "/blogs/himalayas.png"
+    },
+    {
+      "id": "arabian-sea",
+      "title": "Along the Arabian Sea Coast",
+      "date": "Apr 02, 2024",
+      "readTime": "6 min read",
+      "image": "/blogs/coast.png"
+    },
+    {
+      "id": "western-ghats",
+      "title": "Monsoon Rides in the Western Ghats",
+      "date": "Mar 18, 2024",
+      "readTime": "7 min read",
+      "image": "/blogs/ghats.png"
+    },
+    {
+      "id": "camping",
+      "title": "Camping Under Open Skies",
+      "date": "Feb 25, 2024",
+      "readTime": "5 min read",
+      "image": "/blogs/camping.png"
+    },
+    {
+      "id": "unseen-villages",
+      "title": "Exploring Unseen Villages",
+      "date": "Jan 10, 2024",
+      "readTime": "4 min read",
+      "image": "/blogs/villages.png"
+    }
+  ],
+  "bottomQuote": "EVERY RIDE. EVERY STORY. EVERY MILE."
+}

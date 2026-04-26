@@ -1,0 +1,73 @@
+{
+  "header": {
+    "label": "MY EXPERIENCE",
+    "titlePrefix": "Beyond the Code.\nBuilding. Leading. ",
+    "titleHighlight": "Inspiring.",
+    "description": "A collection of roles, responsibilities and initiatives\nthat shaped my journey and strengthened my skills."
+  },
+  "roles": [
+    {
+      "id": "gen-sec",
+      "date": "2023 - Present",
+      "title": "General Secretary",
+      "organization": "Computer Science & Engineering Association",
+      "description": "Leading a team of 20+ students, organizing technical events, workshops and hackathons to build a strong tech community.",
+      "category": "Leadership",
+      "icon": "Users"
+    },
+    {
+      "id": "event-head",
+      "date": "2022 - 2023",
+      "title": "Event Head",
+      "organization": "CodeYu - Annual Tech Fest",
+      "description": "Managed a team and executed flagship events, bringing together 1000+ participants across various domains.",
+      "category": "Event Management",
+      "icon": "Calendar"
+    },
+    {
+      "id": "class-rep",
+      "date": "2021 - 2022",
+      "title": "Class Representative",
+      "organization": "Department of CSE",
+      "description": "Represented the class, bridged communication between students and faculty, and contributed to academic initiatives.",
+      "category": "Communication",
+      "icon": "User"
+    }
+  ],
+  "impact": {
+    "label": "IMPACT SNAPSHOT",
+    "stats": [
+      { "id": "teams", "value": "15+", "label": "Teams Led", "icon": "Users" },
+      { "id": "events", "value": "25+", "label": "Events Organized", "icon": "CalendarDays" },
+      { "id": "people", "value": "1000+", "label": "People Impacted", "icon": "UserCheck" },
+      { "id": "achievements", "value": "10+", "label": "Achievements Earned", "icon": "Trophy" }
+    ]
+  },
+  "highlights": {
+    "label": "HIGHLIGHTS",
+    "items": [
+      {
+        "id": "leadership",
+        "title": "Consistent Leadership",
+        "description": "Took initiative and led teams to deliver impactful results.",
+        "icon": "Star"
+      },
+      {
+        "id": "community",
+        "title": "Community Builder",
+        "description": "Built platforms and communities that encourage learning and collaboration.",
+        "icon": "Rocket"
+      },
+      {
+        "id": "problem",
+        "title": "Problem Solver",
+        "description": "Find creative solutions and implement ideas that create real impact.",
+        "icon": "Target"
+      }
+    ]
+  },
+  "quote": {
+    "text": "Great leaders don't set out to be a leader, they set out to make a difference.",
+    "author": "J. Maxwell"
+  }
+}

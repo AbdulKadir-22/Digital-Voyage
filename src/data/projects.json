@@ -1,0 +1,53 @@
+{
+  "header": {
+    "label": "MY WORK",
+    "titlePrefix": "Ideas. Code. ",
+    "titleHighlight": "Impact.",
+    "description": "A collection of projects where design meets\nfunction and every pixel has a purpose.\nBuilt to solve problems and create experiences\nthat matter."
+  },
+  "categories": [
+    { "id": "all", "label": "All Projects", "icon": "LayoutGrid" },
+    { "id": "web", "label": "Web Apps", "icon": "Globe" },
+    { "id": "mobile", "label": "Mobile Apps", "icon": "Smartphone" },
+    { "id": "uiux", "label": "UI/UX", "icon": "PenTool" }
+  ],
+  "projects": [
+    {
+      "id": "tracksphere",
+      "categoryId": "web",
+      "categoryLabel": "WEB APP",
+      "title": "TrackSphere",
+      "description": "A performance analytics dashboard for athletes and teams.",
+      "link": "#",
+      "image": "/projects/tracksphere.png"
+    },
+    {
+      "id": "ridemate",
+      "categoryId": "mobile",
+      "categoryLabel": "MOBILE APP",
+      "title": "RideMate",
+      "description": "Your cycling companion for tracking rides, routes and milestones.",
+      "link": "#",
+      "image": "/projects/ridemate.png"
+    },
+    {
+      "id": "trailx",
+      "categoryId": "web",
+      "categoryLabel": "WEB APP",
+      "title": "TrailX",
+      "description": "Discover epic routes, plan adventures and connect with riders.",
+      "link": "#",
+      "image": "/projects/trailx.png"
+    },
+    {
+      "id": "cyclecart",
+      "categoryId": "uiux",
+      "categoryLabel": "UI/UX",
+      "title": "CycleCart",
+      "description": "Redesigning the e-commerce experience for cycling gear.",
+      "link": "#",
+      "image": "/projects/cyclecart.png"
+    }
+  ],
+  "bottomQuote": "BUILDING DIGITAL EXPERIENCES\nTHAT DRIVE REAL IMPACT."
+}

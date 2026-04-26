@@ -9,6 +9,8 @@ import {
   Disc3,
   X,
 } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
+
 
 const navItems = [
   { id: 'home', label: 'HOME', icon: Home, angle: -90 },
@@ -95,7 +97,6 @@ function WheelFace({
       </div>
 
       <div className="absolute w-[34%] h-[34%] rounded-full border border-[#dfb48e66] bg-[#14161d] shadow-[0_0_20px_rgba(223,180,142,0.1)] flex items-center justify-center z-20 w-">
-        {/* <div className="w-[85%] h-[85%] rounded-full border border-[rgba(255,255,255,0.03)] shadow-inner" /> */}
         <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle,rgba(223,180,142,0.05),transparent_70%)]" />
         <div className="relative text-center">
           <p className="text-[9px] tracking-[0.28em] text-[rgba(255,255,255,0.42)]">ACTIVE</p>
@@ -164,10 +165,19 @@ function WheelFace({
 }
 
 const CircularNav = () => {
-  const [selectedItem, setSelectedItem] = useState('home');
+  const navigate = useNavigate();
+  const location = useLocation();
+  
+  // Sync selectedItem with current route
+  const currentPathId = location.pathname === '/' ? 'home' : location.pathname.substring(1);
+  const selectedItem = navItems.some(i => i.id === currentPathId) ? currentPathId : 'home';
+  
   const [hoveredItem, setHoveredItem] = useState(null);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [rotation, setRotation] = useState(navItems[0].angle);
+  const [rotation, setRotation] = useState(() => {
+    const activeIndex = navItems.findIndex((item) => item.id === selectedItem);
+    return activeIndex >= 0 ? navItems[activeIndex].angle : navItems[0].angle;
+  });
 
   const activeItem = hoveredItem || selectedItem;
   const activeIndex = useMemo(
@@ -199,7 +209,7 @@ const CircularNav = () => {
           rotation={rotation}
           selectedItem={selectedItem}
           setHoveredItem={setHoveredItem}
-          setSelectedItem={setSelectedItem}
+          setSelectedItem={(id) => navigate(id === 'home' ? '/' : `/${id}`)}
           radius={88}
           iconSize={20}
           labelSizeClass="text-[10px]"
@@ -248,7 +258,7 @@ const CircularNav = () => {
                 rotation={rotation}
                 selectedItem={selectedItem}
                 setHoveredItem={setHoveredItem}
-                setSelectedItem={setSelectedItem}
+                setSelectedItem={(id) => navigate(id === 'home' ? '/' : `/${id}`)}
                 onSelect={() => {
                   setHoveredItem(null);
                   setIsMobileOpen(false);

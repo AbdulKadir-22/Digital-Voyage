@@ -1,0 +1,34 @@
+{
+  "header": {
+    "label": "LET'S CONNECT",
+    "titlePrefix": "Let's Build Something\nGreat ",
+    "titleHighlight": "Together.",
+    "description": "Have a project in mind or just want to say hi?\nI'd love to hear from you. Let's create something impactful."
+  },
+  "details": [
+    { "icon": "Mail", "label": "Email", "value": "hello@faizansari.dev" },
+    { "icon": "Phone", "label": "Phone", "value": "+91 98765 43210" },
+    { "icon": "MapPin", "label": "Location", "value": "India" }
+  ],
+  "form": {
+    "label": "SEND ME A MESSAGE",
+    "privacy": "Your information is safe with me.\nI never share your data."
+  },
+  "location": {
+    "label": "FIND ME HERE",
+    "city": "Mumbai, Maharashtra",
+    "country": "India",
+    "availability": "Mon - Sat: 9AM - 8PM",
+    "responseTime": "Usually within 24 hours"
+  },
+  "socials": [
+    { "id": "linkedin", "icon": "Linkedin", "url": "#" },
+    { "id": "github", "icon": "Github", "url": "#" },
+    { "id": "twitter", "icon": "Twitter", "url": "#" },
+    { "id": "instagram", "icon": "Instagram", "url": "#" }
+  ],
+  "quote": {
+    "text": "The best way to predict the future is to create it.",
+    "author": "Peter Drucker"
+  }
+}
