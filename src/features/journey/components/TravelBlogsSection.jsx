@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import journeyData from '../../../data/journey.json';
 
@@ -17,16 +18,17 @@ const TravelBlogsSection = () => {
           <h2 className="text-[#dfb48e] text-[10px] font-semibold tracking-[0.4em] uppercase">
             Travel Blogs
           </h2>
-          <a href="#blogs" className="group flex items-center gap-2 text-[10px] tracking-[0.2em] text-white/50 hover:text-white transition-colors uppercase">
+          <button className="group flex items-center gap-2 text-[10px] tracking-[0.2em] text-white/50 hover:text-white transition-colors uppercase cursor-default">
             Explore All
             <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
-          </a>
+          </button>
         </div>
 
         <div className="flex gap-4 overflow-x-auto pb-4 snap-x scrollbar-hide">
           {blogs.map((blog) => (
-            <div 
+            <Link 
               key={blog.id} 
+              to={`/journey/${blog.id}`}
               className="group relative flex-none rounded-2xl overflow-hidden snap-start transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:-translate-y-2 w-[180px] hover:w-[320px] h-[240px] cursor-pointer"
             >
               <img src={blog.image} alt={blog.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
@@ -54,7 +56,7 @@ const TravelBlogsSection = () => {
                   {blog.date} • {blog.readTime}
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

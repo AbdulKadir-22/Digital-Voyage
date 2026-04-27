@@ -8,9 +8,17 @@
       "Designer",
       "Problem Solver"
     ],
-    "description": "I craft digital experiences that are fast, beautiful and impactful.",
-    "ctaText": "EXPLORE MY WORK"
+    "description": "I craft digital experiences that are fast, beautiful and impactful. Focused on building solutions that drive real results.",
+    "ctaText": "EXPLORE MY WORK",
+    "status": "Available for new projects",
+    "location": "India",
+    "highlights": [
+      { "label": "Experience", "value": "2+ Years" },
+      { "label": "Projects", "value": "15+" },
+      { "label": "Cups of Tea", "value": "500+" }
+    ]
   },
+
   "footer": {
     "brandingText": "Let's build something great",
     "tagline": "Every ride. Every story. Every mile.",

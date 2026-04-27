@@ -13,11 +13,12 @@ const SocialSidebar = () => {
   const { socials } = content;
 
   return (
-    <aside className="fixed left-8 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-6 p-2 rounded-3xl 
-      bg-[rgba(29,31,39,0.2)] border border-[rgba(255,255,255,0.08)] 
-      shadow-[0_20px_40px_rgba(0,0,0,0.3)] 
-      backdrop-blur-xl
-      max-md:relative max-md:left-auto max-md:top-auto max-md:translate-y-0 max-md:flex-row max-md:p-4 max-md:mt-8 max-md:rounded-full max-md:mx-auto">
+    <aside className="fixed left-8 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-8 p-3 rounded-[2.5rem] 
+      bg-[#ffffff01] border border-white/[0.05] 
+      shadow-[0_20px_50px_rgba(0,0,0,0.5),inset_0_1px_1px_rgba(255,255,255,0.05)] 
+      backdrop-blur-2xl
+      max-md:relative max-md:left-auto max-md:top-auto max-md:translate-y-0 max-md:flex-row max-md:p-4 max-md:mt-8 max-md:rounded-full max-md:mx-auto transition-all duration-500 hover:border-white/10">
+
       
       <div className="flex flex-col gap-6 py-4 max-md:flex-row max-md:py-0 max-md:gap-8">
         {socials.map((social) => {

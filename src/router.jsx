@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
 import Home from './features/home/Home';
 import JourneyPage from './features/journey/JourneyPage';
+import JourneyDetailsPage from './features/journey/JourneyDetailsPage';
 import ProjectsPage from './features/projects/ProjectsPage';
 import ProjectDetailPage from './features/projects/ProjectDetailPage';
 import SkillsPage from './features/skills/SkillsPage';
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: 'journey',
         element: <JourneyPage />,
+      },
+      {
+        path: 'journey/:journeyId',
+        element: <JourneyDetailsPage />,
       },
       {
         path: 'projects',

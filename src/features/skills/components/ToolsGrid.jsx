@@ -98,12 +98,12 @@ const ToolsGrid = () => {
         </AnimatePresence>
       </motion.div>
 
-      <div className="mt-2 flex w-full justify-center border-t border-white/6 pt-5">
+      {/* <div className="mt-2 flex w-full justify-center border-t border-white/6 pt-5">
         <button className="group flex cursor-pointer items-center gap-2 text-[0.78rem] uppercase tracking-[0.24em] text-[#dfb48e] transition-colors hover:text-[#f3c8a4]">
           VIEW ALL TECHNOLOGIES
           <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

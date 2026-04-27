@@ -2,14 +2,15 @@ import PortalCircle from './PortalCircle';
 
 const HeroBackground = () => {
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none bg-[#0f1117]" aria-hidden="true">
+    <div className="fixed inset-0 overflow-hidden pointer-events-none bg-[#0f1117] z-[-1]" aria-hidden="true">
       {/* Base Background with Image - Fixed Attachment */}
       <div 
-        className="absolute inset-0 bg-center bg-cover bg-no-repeat bg-fixed scale-[1.02] blur-[1px] saturate-[0.7] brightness-[0.80]"
+        className="absolute inset-0 bg-center bg-cover bg-no-repeat scale-[1.02] blur-[1px] saturate-[0.7] brightness-[0.80]"
         style={{ 
           backgroundImage: 'linear-gradient(180deg, rgba(15, 18, 24, 0.4), rgba(15, 18, 24, 0.6)), url("/bg-image.png")' 
         }}
       />
+
 
       
       {/* Portal Effect */}
