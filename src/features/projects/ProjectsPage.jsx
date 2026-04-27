@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { ChevronDown } from 'lucide-react';
+import SEO from '../../components/SEO';
 import ProjectsHeader from './components/ProjectsHeader';
 import ProjectCard from './components/ProjectCard';
 import projectsData from '../../data/projects.json';
@@ -29,6 +30,11 @@ const ProjectsPage = () => {
 
   return (
     <div className="relative z-10 w-full pt-32 pb-20 px-4 max-w-7xl mx-auto flex flex-col items-center">
+      <SEO
+        title="Projects — Ideas. Code. Impact."
+        description="A showcase of web apps and mobile apps built by Faiz Ansari — from performance dashboards to cycling companion apps."
+        path="/projects"
+      />
       {/* Header Section */}
       <div className="w-full flex justify-start mb-4 lg:pl-10">
         <ProjectsHeader 

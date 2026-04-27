@@ -1,3 +1,4 @@
+import SEO from '../../components/SEO';
 import ContactHeader from './components/ContactHeader';
 import ContactForm from './components/ContactForm';
 import LocationCard from './components/LocationCard';
@@ -7,7 +8,11 @@ import QuoteCard from './components/QuoteCard';
 const ContactPage = () => {
   return (
     <div className="relative z-10 w-full pt-32 pb-20 px-4 max-w-[1200px] mx-auto flex flex-col items-center">
-      
+      <SEO
+        title="Contact — Let's Build Something Great"
+        description="Get in touch with Faiz Ansari for collaboration, freelance work, or just to say hi. Based in India, available globally."
+        path="/contact"
+      />
       <div className="w-full grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-8 lg:px-10">
         
         {/* Left Column */}

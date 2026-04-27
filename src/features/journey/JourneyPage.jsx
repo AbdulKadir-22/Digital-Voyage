@@ -1,3 +1,4 @@
+import SEO from '../../components/SEO';
 import JourneyHeader from './components/JourneyHeader';
 import MedalsSection from './components/MedalsSection';
 import TravelBlogsSection from './components/TravelBlogsSection';
@@ -6,6 +7,11 @@ import journeyData from '../../data/journey.json';
 const JourneyPage = () => {
   return (
     <div className="relative z-10 w-full pt-32 pb-20 px-4 max-w-7xl mx-auto flex flex-col items-center">
+      <SEO
+        title="My Journey — Miles, Medals & Memories"
+        description="Explore Faiz Ansari's cycling journey — races, medals, and travel stories from across India and beyond."
+        path="/journey"
+      />
       <JourneyHeader />
       <MedalsSection />
       <TravelBlogsSection />

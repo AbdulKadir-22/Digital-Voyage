@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Bike } from 'lucide-react';
+import SEO from '../../components/SEO';
 import SkillStats from './components/SkillStats';
 import ProgressSection from './components/ProgressSection';
 import ToolsGrid from './components/ToolsGrid';
@@ -26,6 +27,11 @@ const SkillsPage = () => {
       animate="visible"
       className="relative z-10 mx-auto flex min-h-screen w-full max-w-[1600px] flex-col px-4 pb-10 pt-24 font-sans md:px-6 md:pl-28 md:pr-[260px] lg:pl-32 lg:pr-[320px] lg:pt-28"
     >
+      <SEO
+        title="Skills — Built Different, Trained to Deliver"
+        description="Faiz Ansari's technical skills: React, Next.js, Node.js, TypeScript, MongoDB, PostgreSQL and more. Full Stack Developer based in India."
+        path="/skills"
+      />
       <div className="pointer-events-none absolute inset-x-6 top-12 bottom-6 hidden rounded-[2.8rem] border border-[rgba(223,180,142,0.2)] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.02)] lg:block" />
       <div className="pointer-events-none absolute left-2 top-24 hidden h-[34rem] w-[11rem] rounded-[4rem] border border-[rgba(223,180,142,0.45)] border-r-0 opacity-70 blur-[0.2px] lg:block" />
       <div className="pointer-events-none absolute right-0 top-20 hidden h-[46rem] w-[10rem] rounded-[999px] border border-[rgba(223,180,142,0.2)] border-l-0 opacity-60 lg:block" />

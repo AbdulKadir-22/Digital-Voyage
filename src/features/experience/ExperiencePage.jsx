@@ -1,3 +1,4 @@
+import SEO from '../../components/SEO';
 import ExperienceHeader from './components/ExperienceHeader';
 import RolesTimeline from './components/RolesTimeline';
 import ImpactSnapshot from './components/ImpactSnapshot';
@@ -7,7 +8,11 @@ import ExperienceQuote from './components/ExperienceQuote';
 const ExperiencePage = () => {
   return (
     <div className="relative z-10 w-full pt-32 pb-20 px-4 max-w-[1200px] mx-auto flex flex-col items-center">
-      
+      <SEO
+        title="Experience — Beyond the Code"
+        description="Leadership roles, community building, and technical initiatives by Faiz Ansari — General Secretary, Event Head, and more."
+        path="/experience"
+      />
       <div className="w-full grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-8 lg:px-10">
         
         {/* Left Column */}

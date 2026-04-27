@@ -1,8 +1,14 @@
+import SEO from '../../components/SEO';
 import HeroCard from './HeroCard';
 
 const Home = () => {
   return (
     <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-6 overflow-hidden">
+      <SEO
+        title="Full Stack Developer & Designer"
+        description="Faiz Ansari is a Full Stack Developer and Designer crafting fast, beautiful, and impactful digital experiences. Based in India."
+        path="/"
+      />
       
       {/* Cinematic Perspective Elements */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140vw] h-[140vh] pointer-events-none z-0">
