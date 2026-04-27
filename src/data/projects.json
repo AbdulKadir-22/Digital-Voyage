@@ -17,37 +17,131 @@
       "categoryId": "web",
       "categoryLabel": "WEB APP",
       "title": "TrackSphere",
+      "subtitle": "Performance Analytics Dashboard for Athletes & Teams",
       "description": "A performance analytics dashboard for athletes and teams.",
+      "longDescription": "TrackSphere is a powerful analytics platform designed to help athletes and coaches monitor performance, analyze trends and make data-driven decisions to achieve peak performance.",
       "link": "#",
-      "image": "/projects/tracksphere.png"
+      "image": "/projects/tracksphere.png",
+      "gallery": [
+        "/projects/tracksphere-1.png",
+        "/projects/tracksphere-2.png",
+        "/projects/tracksphere-3.png",
+        "/projects/tracksphere-4.png",
+        "/projects/tracksphere-5.png"
+      ],
+      "liveLink": "https://tracksphere.app",
+      "codeLink": "https://github.com/faiz/tracksphere",
+      "pdfLink": "#",
+      "about": [
+        { "icon": "Activity", "label": "Real-time Analytics" },
+        { "icon": "Target", "label": "Performance Tracking" },
+        { "icon": "Lightbulb", "label": "Smart Insights" },
+        { "icon": "Users", "label": "Team Collaboration" }
+      ],
+      "technologies": [
+        { "name": "React", "icon": "SiReact" },
+        { "name": "TypeScript", "icon": "SiTypescript" },
+        { "name": "TailwindCSS", "icon": "SiTailwindcss" },
+        { "name": "Chart.js", "icon": "SiChartdotjs" },
+        { "name": "Node.js", "icon": "SiNodedotjs" },
+        { "name": "Express.js", "icon": "SiExpress" },
+        { "name": "MongoDB", "icon": "SiMongodb" },
+        { "name": "Socket.io", "icon": "SiSocketdotio" }
+      ],
+      "features": [
+        "Interactive performance dashboards",
+        "Real-time data visualization",
+        "Detailed route analysis",
+        "Goal tracking and progress monitoring",
+        "Team management and leaderboards"
+      ],
+      "challenge": "Athletes and coaches needed a unified platform to track performance, analyze data and gain actionable insights. Existing tools were either too complex, expensive or lacked real-time capabilities.",
+      "approach": "I focused on building an intuitive and fast platform with real-time analytics, beautiful visualizations and seamless user experience across all devices.",
+      "results": [
+        "40% improvement in training efficiency",
+        "35% increase in goal achievement rate",
+        "Trusted by 500+ athletes and 20+ teams"
+      ]
     },
     {
       "id": "ridemate",
       "categoryId": "mobile",
       "categoryLabel": "MOBILE APP",
       "title": "RideMate",
+      "subtitle": "Your cycling companion for tracking rides",
       "description": "Your cycling companion for tracking rides, routes and milestones.",
+      "longDescription": "RideMate is a mobile-first application designed for the modern cyclist. It provides seamless tracking of every pedal stroke while offering deep insights into your cycling journey.",
       "link": "#",
-      "image": "/projects/ridemate.png"
+      "image": "/projects/ridemate.png",
+      "gallery": ["/projects/ridemate.png"],
+      "liveLink": "#",
+      "codeLink": "#",
+      "about": [
+        { "icon": "MapPin", "label": "GPS Tracking" },
+        { "icon": "Award", "label": "Milestones" }
+      ],
+      "technologies": [
+        { "name": "React Native", "icon": "SiReact" },
+        { "name": "Firebase", "icon": "SiFirebase" }
+      ],
+      "features": ["GPS Route Tracking", "Achievement System"],
+      "challenge": "Tracking rides often requires multiple apps that don't talk to each other.",
+      "approach": "Creating a unified mobile experience with offline support.",
+      "results": ["Successfully launched on App Store", "1k+ active users"]
     },
     {
       "id": "trailx",
       "categoryId": "web",
       "categoryLabel": "WEB APP",
       "title": "TrailX",
+      "subtitle": "Discover epic routes and plan adventures",
       "description": "Discover epic routes, plan adventures and connect with riders.",
+      "longDescription": "TrailX is a community-driven platform for outdoor enthusiasts to share and discover the best trails around the world.",
       "link": "#",
-      "image": "/projects/trailx.png"
+      "image": "/projects/trailx.png",
+      "gallery": ["/projects/trailx.png"],
+      "liveLink": "#",
+      "codeLink": "#",
+      "about": [
+        { "icon": "Mountain", "label": "Trail Discovery" },
+        { "icon": "Users", "label": "Community" }
+      ],
+      "technologies": [
+        { "name": "Next.js", "icon": "SiNextdotjs" },
+        { "name": "Mapbox", "icon": "SiMapbox" }
+      ],
+      "features": ["Interactive Maps", "Community Reviews"],
+      "challenge": "Fragmented information about trail conditions and difficulty.",
+      "approach": "Building a centralized hub for crowdsourced trail data.",
+      "results": ["Featured in Outdoor Weekly", "5k+ routes added"]
     },
     {
       "id": "cyclecart",
       "categoryId": "uiux",
       "categoryLabel": "UI/UX",
       "title": "CycleCart",
+      "subtitle": "Redesigning the e-commerce experience",
       "description": "Redesigning the e-commerce experience for cycling gear.",
+      "longDescription": "CycleCart is a UI/UX case study focused on optimizing the conversion funnel for a high-end cycling equipment retailer.",
       "link": "#",
-      "image": "/projects/cyclecart.png"
+      "image": "/projects/cyclecart.png",
+      "gallery": ["/projects/cyclecart.png"],
+      "liveLink": "#",
+      "codeLink": "#",
+      "about": [
+        { "icon": "ShoppingCart", "label": "Conversion Optimized" },
+        { "icon": "Palette", "label": "Visual Identity" }
+      ],
+      "technologies": [
+        { "name": "Figma", "icon": "SiFigma" },
+        { "name": "Adobe XD", "icon": "SiAdobexd" }
+      ],
+      "features": ["Streamlined Checkout", "Product Visualizer"],
+      "challenge": "High cart abandonment rates in the premium cycling segment.",
+      "approach": "Deep user research and iterative prototyping.",
+      "results": ["25% increase in mock conversion rate", "Awwwards Honorable Mention"]
     }
   ],
   "bottomQuote": "BUILDING DIGITAL EXPERIENCES\nTHAT DRIVE REAL IMPACT."
 }
+

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 
 const ProjectCard = ({ project }) => {
@@ -18,9 +19,12 @@ const ProjectCard = ({ project }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#090a0f] to-transparent opacity-60 mix-blend-multiply" />
         
         {/* Top Right Arrow Icon */}
-        <div className="absolute top-4 right-4 w-8 h-8 rounded-full border border-white/10 bg-black/40 backdrop-blur-md flex items-center justify-center text-white/50 group-hover:bg-[#dfb48e26] group-hover:text-[#dfb48e] group-hover:border-[#dfb48e4d] transition-colors duration-300">
+        <Link 
+          to={`/projects/${project.id}`}
+          className="absolute top-4 right-4 w-8 h-8 rounded-full border border-white/10 bg-black/40 backdrop-blur-md flex items-center justify-center text-white/50 group-hover:bg-[#dfb48e26] group-hover:text-[#dfb48e] group-hover:border-[#dfb48e4d] transition-colors duration-300"
+        >
           <ArrowUpRight size={14} />
-        </div>
+        </Link>
       </div>
 
       {/* Content */}
@@ -39,13 +43,17 @@ const ProjectCard = ({ project }) => {
           {project.description}
         </p>
 
-        <a href={project.link} className="mt-auto group/link flex items-center gap-2 text-[10px] tracking-[0.2em] text-[#dfb48e] hover:text-[#ffceaa] transition-colors uppercase font-medium">
+        <Link 
+          to={`/projects/${project.id}`} 
+          className="mt-auto group/link flex items-center gap-2 text-[10px] tracking-[0.2em] text-[#dfb48e] hover:text-[#ffceaa] transition-colors uppercase font-medium"
+        >
           View Project
           <ArrowRight size={14} className="transition-transform duration-300 group-hover/link:translate-x-1" />
-        </a>
+        </Link>
       </div>
     </div>
   );
 };
+
 
 export default ProjectCard;
